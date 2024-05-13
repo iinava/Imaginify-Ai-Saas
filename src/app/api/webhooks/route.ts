@@ -55,22 +55,30 @@ console.log("ok");
   const { id } = evt.data;
   const eventType = evt.type;
   if (eventType === "user.created") {
-    const { id, email_addresses, image_url, first_name, last_name, username } = evt.data;
+    // const { id, email_addresses, image_url, first_name, last_name, username } = evt.data;
 
+    // const user = {
+    //   clerkId: id,
+    //   email: email_addresses[0].email_address,
+    //   username: username!,
+    //   firstName: first_name || "",
+    //   lastName: last_name || "",
+    //   photo: image_url,
+    // };
     const user = {
-      clerkId: id,
-      email: email_addresses[0].email_address,
-      username: username!,
-      firstName: first_name || "",
-      lastName: last_name || "",
-      photo: image_url,
+      clerkId: "234",
+      email: "hello",
+      username: "username",
+      firstName: "lastname",
+      lastName: "lastname",
+      photo: "sdjfndjfnjfndsjfnsdjfnjdfn",
     };
 
     const newUser = await createUser(user);
 
     // Set public metadata
     if (newUser) {
-      await clerkClient.users.updateUserMetadata(id, {
+      await clerkClient.users.updateUserMetadata("1", {
         publicMetadata: {
           userId: newUser._id,
         },
