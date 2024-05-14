@@ -18,7 +18,6 @@
 //   matcher: ['/((?!.*\\..*|_next).*)', '/', '/(api|trpc)(.*)'],
 // };
 
-
 import { clerkMiddleware } from '@clerk/nextjs/server';
 
 // Make sure that the `/api/webhooks/(.*)` route is not protected here
