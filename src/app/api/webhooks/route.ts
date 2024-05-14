@@ -66,6 +66,8 @@ console.log("work please")
       lastName: last_name || "",
       photo: image_url,
     };
+    console.log("user about to be saved to DB",user);
+    
 
     const newUser = await createUser(user);
 
