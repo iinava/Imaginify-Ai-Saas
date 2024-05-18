@@ -1,6 +1,7 @@
 import { Schema, model, models } from "mongoose";
 import { string } from "zod";
 export interface IImage extends Document {
+     _id: Types.ObjectId;
     title: string;
     transformationType: string;
     publicId: string;
