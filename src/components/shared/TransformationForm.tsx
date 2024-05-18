@@ -72,12 +72,16 @@ const TransformationForm = ({ action, data = null, userId, type, creditBalance, 
     setIsSubmitting(true);
 
     if(data || image) {
-      const transformationUrl = getCldImageUrl({
+      const transformationURL = getCldImageUrl({
         width: image?.width,
         height: image?.height,
         src: image?.publicId,
         ...transformationConfig
       })
+      console.log(image);
+      console.log(transformationURL);
+      
+      
 
       const imageData = {
         title: values.title,
@@ -87,7 +91,7 @@ const TransformationForm = ({ action, data = null, userId, type, creditBalance, 
         height: image?.height,
         config: transformationConfig,
         secureURL: image?.secureURL,
-        transformationURL: transformationUrl,
+        transformationURL: transformationURL,
         aspectRatio: values.aspectRatio,
         prompt: values.prompt,
         color: values.color,
@@ -95,6 +99,8 @@ const TransformationForm = ({ action, data = null, userId, type, creditBalance, 
 
       if(action === 'Add') {
         try {
+          console.log(imageData);
+          
           const newImage = await addImage({
             image: imageData,
             userId,
@@ -104,6 +110,8 @@ const TransformationForm = ({ action, data = null, userId, type, creditBalance, 
           if(newImage) {
             form.reset()
             setImage(data)
+            console.log(newImage);
+            
             router.push(`/transformations/${newImage._id}`)
           }
         } catch (error) {
