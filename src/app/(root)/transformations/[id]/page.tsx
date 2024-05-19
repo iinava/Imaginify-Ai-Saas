@@ -12,8 +12,12 @@ import { DeleteConfirmation } from "@/components/shared/DeleteConfirmation";
 
 const ImageDetails = async ({ params: { id } }: SearchParamProps) => {
   const { userId } = auth();
+  console.log(userId);
+  
 
   const image = await Getbyid(id);
+  console.log(image);
+  
 
   return (
     <>
