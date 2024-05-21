@@ -1,36 +1,58 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
 
-## Getting Started
 
-First, run the development server:
+# Imaginify Ai Saas
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+Imaginify AI is a  SaaS application built with Next.js, designed to provide advanced image processing capabilities. By leveraging the capabilities of Cloudinary, Imaginify AI offers features such as object recoloring, object removal, and generative fill, allowing users to enhance and manipulate images effortlessly.
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+#Deployed Demo
+https://imaginify-nine-wheat.vercel.app/
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
+#Demo
 
-## Learn More
 
-To learn more about Next.js, take a look at the following resources:
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
+https://github.com/iinava/Imaginify-Ai-Saas/assets/131179814/311cda0e-ef1b-4e51-bdc5-488ec37a8fc3
 
-## Deploy on Vercel
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+## Features
+
+Object Recoloring: Change the color of specific objects within an image.
+Object Removal: Seamlessly remove unwanted objects from images.
+Generative Fill: Fill in missing parts of images using generative AI technology.
+Cloud-Based: Utilize Cloudinary for image storage and processing.
+Built with Next.js: Fast, scalable, and modern web application framework.
+
+
+
+## Installation and Setup
+
+To set up the project locally, follow these steps:
+
+1. **Clone the Repository:**
+   ```bash
+   https://github.com/iinava/Imaginify-Ai-Saas.git
+   ```
+
+2. **Install Dependencies:**
+   ```bash
+   npm install
+   ```
+4. **Start the Development Server:**
+   ```bash
+   npm run dev
+   ```
+   This command will Run the project but u will need an env file containing stripe, clerk , Cloudinary , Mongo Db keys
+   
+
+## Technologies Used
+Next js , React js ,Clerk, Mongo Db , Cloudinary  , Stripe 
+- **Prisma:** An ORM (Object-Relational Mapping) tool used for database management.
+- **Socket.io:** A library enabling real-time, bidirectional communication between clients and servers.
+
+## End
+
+
+If you find this project useful, please give it a ⭐ on GitHub to show your support!
